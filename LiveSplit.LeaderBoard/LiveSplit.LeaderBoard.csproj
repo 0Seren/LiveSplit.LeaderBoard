@@ -63,6 +63,7 @@
     <Compile Include="UI\Components\LeaderBoardSettings.Designer.cs">
       <DependentUpon>LeaderBoardSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Components\RecordComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI\Components\LeaderBoardSettings.resx">

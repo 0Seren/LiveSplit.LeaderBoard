@@ -77,16 +77,16 @@ namespace LiveSplit.LeaderBoard.UI.Components {
                 if (State != null && State.Run != null && State.Run.Metadata.Game != null && State.Run.Metadata.Category != null)
                 {
                     //Get these from setings later:
-                    var region_filter = false ? "" : null;
-                    var platorm_filter = false ? "" : null;
-                    IEnumerable<SpeedrunComSharp.VariableValue> variable_filter = null;
-                    EmulatorsFilter emulator_filter = EmulatorsFilter.NotSet;
+                    var region_filter = Settings.FilterRegion && State.Run.Metadata.Region != null ? State.Run.Metadata.Region.ID : null;
+                    var platorm_filter = Settings.FilterPlatform && State.Run.Metadata.Platform != null ? State.Run.Metadata.Platform.ID : null;
+                    EmulatorsFilter emulator_filter = !Settings.FilterEmulator ? EmulatorsFilter.NotSet : State.Run.Metadata.UsesEmulator ? EmulatorsFilter.OnlyEmulators : EmulatorsFilter.NoEmulators;
 
-                    var leaderboard = Client.Leaderboards.GetLeaderboardForFullGameCategory(State.Run.Metadata.Game.ID, State.Run.Metadata.Category.ID,
-                            platformId: platorm_filter,
-                            regionId: region_filter,
-                            emulatorsFilter: emulator_filter,
-                            variableFilters: variable_filter);
+                    var leaderboard = Client.Leaderboards.GetLeaderboardForFullGameCategory(
+                        State.Run.Metadata.Game.ID,
+                        State.Run.Metadata.Category.ID,
+                        platformId: platorm_filter,
+                        regionId: region_filter,
+                        emulatorsFilter: emulator_filter);
 
                     if (leaderboard != null)
                     {
@@ -106,9 +106,9 @@ namespace LiveSplit.LeaderBoard.UI.Components {
             if(SRCLeaderBoard != null)
             {
                 //Settings:
-                var always_show_first = true;
-                var num_to_show = 5;
-                var centered_around_me = false;
+                var self_centered = Settings.SelfCentered;
+                var max_positions = Settings.MaxPositions;
+                var show_first = Settings.ShowFirst;
 
                 var timingMethod = State.CurrentTimingMethod;
                 var game = State.Run.Metadata.Game;
@@ -126,8 +126,6 @@ namespace LiveSplit.LeaderBoard.UI.Components {
                 {
                     userName = SpeedrunCom.Client.Profile.Name;
                 }
-
-                var title_text = "Rank\tPlayer\tTime";
                 
             } else if (IsLoading)
             {
