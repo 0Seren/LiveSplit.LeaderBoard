@@ -62,11 +62,11 @@
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.nmbrMaxPositions = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cmbGradientType = new System.Windows.Forms.ComboBox();
             this.chkbxSelfCentered = new System.Windows.Forms.CheckBox();
             this.chkbxShowFirst = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmbGradientType = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -88,6 +88,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 312F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
@@ -99,17 +100,16 @@
             this.tableLayoutPanel1.Controls.Add(this.groupBox3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.cmbGradientType, 3, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 4);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(4);
-            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(944, 861);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(928, 874);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // btnColor2
@@ -146,10 +146,10 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(934, 539);
+            this.groupBox2.Size = new System.Drawing.Size(912, 548);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Text Color";
+            this.groupBox2.Text = "Text Colors";
             // 
             // tableLayoutPanel3
             // 
@@ -169,7 +169,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(926, 507);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(904, 516);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // groupBox4
@@ -181,10 +181,10 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(918, 129);
+            this.groupBox4.Size = new System.Drawing.Size(896, 129);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Table Header Color";
+            this.groupBox4.Text = "Table Headers Color";
             // 
             // tableLayoutPanel5
             // 
@@ -202,7 +202,7 @@
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(910, 97);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(888, 97);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // chkbxOverrideHeaderLayoutSettings
@@ -248,7 +248,7 @@
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Size = new System.Drawing.Size(918, 129);
+            this.groupBox5.Size = new System.Drawing.Size(896, 129);
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Rank Color";
@@ -269,7 +269,7 @@
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(910, 97);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(888, 97);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
             // chkbxOverrideRankLayoutSettings
@@ -315,7 +315,7 @@
             this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox6.Size = new System.Drawing.Size(918, 88);
+            this.groupBox6.Size = new System.Drawing.Size(896, 97);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Name Theme";
@@ -323,9 +323,10 @@
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.AutoSize = true;
-            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.btnNameColor, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.cmbNameTheme, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -333,14 +334,15 @@
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(910, 56);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(888, 65);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // btnNameColor
             // 
+            this.btnNameColor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnNameColor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNameColor.Location = new System.Drawing.Point(299, 6);
+            this.btnNameColor.Location = new System.Drawing.Point(466, 10);
             this.btnNameColor.Margin = new System.Windows.Forms.Padding(6);
             this.btnNameColor.Name = "btnNameColor";
             this.btnNameColor.Size = new System.Drawing.Size(46, 44);
@@ -351,14 +353,15 @@
             // cmbNameTheme
             // 
             this.cmbNameTheme.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmbNameTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNameTheme.FormattingEnabled = true;
             this.cmbNameTheme.Items.AddRange(new object[] {
             "SRC Dark Background",
             "SRC Light Background",
             "Custom Solid Color Theme"});
-            this.cmbNameTheme.Location = new System.Drawing.Point(3, 11);
+            this.cmbNameTheme.Location = new System.Drawing.Point(3, 16);
             this.cmbNameTheme.Name = "cmbNameTheme";
-            this.cmbNameTheme.Size = new System.Drawing.Size(287, 33);
+            this.cmbNameTheme.Size = new System.Drawing.Size(350, 33);
             this.cmbNameTheme.TabIndex = 1;
             this.cmbNameTheme.SelectedIndexChanged += new System.EventHandler(this.cmbNameTheme_SelectedIndexChanged);
             // 
@@ -367,11 +370,11 @@
             this.groupBox7.AutoSize = true;
             this.groupBox7.Controls.Add(this.tableLayoutPanel7);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox7.Location = new System.Drawing.Point(4, 374);
+            this.groupBox7.Location = new System.Drawing.Point(4, 383);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox7.Size = new System.Drawing.Size(918, 129);
+            this.groupBox7.Size = new System.Drawing.Size(896, 129);
             this.groupBox7.TabIndex = 0;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Time Color";
@@ -392,7 +395,7 @@
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(910, 97);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(888, 97);
             this.tableLayoutPanel7.TabIndex = 2;
             // 
             // chkbxOverrideTimeLayoutSettings
@@ -431,14 +434,15 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.groupBox3, 4);
             this.groupBox3.Controls.Add(this.tableLayoutPanel2);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(8, 651);
+            this.groupBox3.Location = new System.Drawing.Point(8, 660);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(934, 415);
+            this.groupBox3.Size = new System.Drawing.Size(912, 206);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Leaderboard Options";
@@ -446,6 +450,7 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.AutoSize = true;
+            this.tableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.Controls.Add(this.groupBox1, 0, 1);
@@ -456,7 +461,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(926, 383);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(904, 174);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // groupBox1
@@ -466,7 +471,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(3, 106);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(920, 274);
+            this.groupBox1.Size = new System.Drawing.Size(898, 65);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filters";
@@ -486,7 +491,7 @@
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(914, 244);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(892, 35);
             this.tableLayoutPanel8.TabIndex = 0;
             // 
             // chkbxFilterPlatform
@@ -502,7 +507,7 @@
             // chkbxFilterRegion
             // 
             this.chkbxFilterRegion.AutoSize = true;
-            this.chkbxFilterRegion.Location = new System.Drawing.Point(307, 3);
+            this.chkbxFilterRegion.Location = new System.Drawing.Point(300, 3);
             this.chkbxFilterRegion.Name = "chkbxFilterRegion";
             this.chkbxFilterRegion.Size = new System.Drawing.Size(166, 29);
             this.chkbxFilterRegion.TabIndex = 10;
@@ -512,7 +517,7 @@
             // chkbxFilterEmulator
             // 
             this.chkbxFilterEmulator.AutoSize = true;
-            this.chkbxFilterEmulator.Location = new System.Drawing.Point(611, 3);
+            this.chkbxFilterEmulator.Location = new System.Drawing.Point(597, 3);
             this.chkbxFilterEmulator.Name = "chkbxFilterEmulator";
             this.chkbxFilterEmulator.Size = new System.Drawing.Size(183, 29);
             this.chkbxFilterEmulator.TabIndex = 11;
@@ -537,17 +542,22 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(920, 97);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(898, 97);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
             // nmbrMaxPositions
             // 
             this.nmbrMaxPositions.Location = new System.Drawing.Point(366, 3);
+            this.nmbrMaxPositions.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nmbrMaxPositions.Name = "nmbrMaxPositions";
             this.nmbrMaxPositions.Size = new System.Drawing.Size(120, 31);
             this.nmbrMaxPositions.TabIndex = 8;
             this.nmbrMaxPositions.Value = new decimal(new int[] {
-            5,
+            3,
             0,
             0,
             0});
@@ -561,29 +571,6 @@
             this.label5.Size = new System.Drawing.Size(329, 25);
             this.label5.TabIndex = 0;
             this.label5.Text = "Max Number of Positions Shown:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(10, 4);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(300, 96);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Background Color:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // cmbGradientType
-            // 
-            this.cmbGradientType.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cmbGradientType.FormattingEnabled = true;
-            this.cmbGradientType.Location = new System.Drawing.Point(438, 35);
-            this.cmbGradientType.Margin = new System.Windows.Forms.Padding(6);
-            this.cmbGradientType.Name = "cmbGradientType";
-            this.cmbGradientType.Size = new System.Drawing.Size(496, 33);
-            this.cmbGradientType.TabIndex = 1;
-            this.cmbGradientType.SelectedIndexChanged += new System.EventHandler(this.cmbGradientType_SelectedIndexChanged);
             // 
             // chkbxSelfCentered
             // 
@@ -619,6 +606,34 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Speedrun.com Integration Required:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(10, 4);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(300, 96);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Background Color:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cmbGradientType
+            // 
+            this.cmbGradientType.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmbGradientType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGradientType.FormattingEnabled = true;
+            this.cmbGradientType.Items.AddRange(new object[] {
+            "Plain",
+            "Vertical",
+            "Horizontal"});
+            this.cmbGradientType.Location = new System.Drawing.Point(438, 35);
+            this.cmbGradientType.Margin = new System.Windows.Forms.Padding(6);
+            this.cmbGradientType.Name = "cmbGradientType";
+            this.cmbGradientType.Size = new System.Drawing.Size(480, 33);
+            this.cmbGradientType.TabIndex = 1;
+            this.cmbGradientType.SelectedIndexChanged += new System.EventHandler(this.cmbGradientType_SelectedIndexChanged);
+            // 
             // LeaderBoardSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -628,7 +643,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LeaderBoardSettings";
             this.Padding = new System.Windows.Forms.Padding(4);
-            this.Size = new System.Drawing.Size(952, 869);
+            this.Size = new System.Drawing.Size(940, 886);
             this.Load += new System.EventHandler(this.LeaderBoardSettings_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -663,6 +678,7 @@
             this.tableLayoutPanel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmbrMaxPositions)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

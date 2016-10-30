@@ -32,7 +32,7 @@ namespace LiveSplit.LeaderBoard.UI.Components {
         private bool IsLoading { get; set; }
         private SpeedrunComClient Client { get; set; }
 
-        public string ComponentName => "Leader Board";
+        public string ComponentName => "Leaderboard";
 
         public float PaddingTop => InternalComponent.PaddingTop;
         public float PaddingLeft => InternalComponent.PaddingLeft;
@@ -54,7 +54,7 @@ namespace LiveSplit.LeaderBoard.UI.Components {
             Cache = new GraphicsCache();
             TimeFormatter = new AutomaticPrecisionTimeFormatter();
             LocalTimeFormatter = new RegularTimeFormatter();
-            InternalComponent = new InfoTextComponent("Leader Board", "-");
+            InternalComponent = new InfoTextComponent("Leaderboard", "-");
 
             Settings = new LeaderBoardSettings()
             {
@@ -129,11 +129,11 @@ namespace LiveSplit.LeaderBoard.UI.Components {
                 
             } else if (IsLoading)
             {
-                InternalComponent.InformationName = "Loading Leader Board...";
+                InternalComponent.InformationName = "Loading Leaderboard...";
                 InternalComponent.AlternateNameText = new[] { "Loading LB..." };
             } else
             {
-                InternalComponent.InformationName = "Unknown Leader Board";
+                InternalComponent.InformationName = "Unknown Leaderboard";
                 InternalComponent.AlternateNameText = new[] { "Unknown LB" };
             }
         }

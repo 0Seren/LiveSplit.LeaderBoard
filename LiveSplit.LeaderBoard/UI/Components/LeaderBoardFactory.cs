@@ -8,9 +8,9 @@ namespace LiveSplit.LeaderBoard.UI.Components {
 
     class LeaderBoardFactory : IComponentFactory {
 
-        public string ComponentName => "Leader Board";
+        public string ComponentName => "Leaderboard";
 
-        public string Description => "Shows the Leader Board for the run";
+        public string Description => "Shows the Leaderboard for the run";
 
         public ComponentCategory Category => ComponentCategory.Information;
 

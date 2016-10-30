@@ -28,7 +28,7 @@ namespace LiveSplit.UI.Components
         public NameThemeChoice NameChoice { get; set; }
         public string NameThemeString
         {
-            get { return NameChoice.ToString(); }
+            get { return Regex.Replace(NameChoice.ToString(), @"[_]", " "); }
             set { NameChoice = (NameThemeChoice)Enum.Parse(typeof(NameThemeChoice), Regex.Replace(value, @"[\s]", "_")); }
         }
 
@@ -70,7 +70,7 @@ namespace LiveSplit.UI.Components
             BackgroundColor2 = Color.Transparent;
             BackgroundGradient = GradientType.Plain;
 
-            MaxPositions = 5;
+            MaxPositions = 3;
             SelfCentered = false;
             ShowFirst = true;
 
@@ -126,10 +126,10 @@ namespace LiveSplit.UI.Components
             label3.Enabled = btnTimeColor.Enabled = chkbxOverrideTimeLayoutSettings.Checked;
         }
 
-        void chkOverrideNameColor_CheckedChanged(object sender, EventArgs e)
+        /*void chkOverrideNameColor_CheckedChanged(object sender, EventArgs e)
         {
-            btnNameColor.Enabled = cmbNameTheme.SelectedText == "Custom Solid Color Theme";
-        }
+            btnNameColor.Visible = cmbNameTheme.SelectedText == "Custom Solid Color Theme";
+        }*/
 
         void chkSelfCentered_CheckedChanged(object sender, EventArgs e)
         {
@@ -148,7 +148,7 @@ namespace LiveSplit.UI.Components
             chkOverrideHeaderColor_CheckedChanged(null, null);
             chkOverrideRankColor_CheckedChanged(null, null);
             chkOverrideTimeColor_CheckedChanged(null, null);
-            chkOverrideNameColor_CheckedChanged(null, null);
+            //chkOverrideNameColor_CheckedChanged(null, null);
             chkSelfCentered_CheckedChanged(null, null);
 
             if (SpeedrunCom.Client.IsAccessTokenValid && SpeedrunCom.Client.Profile.Name != string.Empty)
