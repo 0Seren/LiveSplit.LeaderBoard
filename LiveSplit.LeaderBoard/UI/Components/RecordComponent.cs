@@ -23,8 +23,6 @@ namespace LiveSplit.LeaderBoard.UI.Components
         protected SimpleLabel NameLabel { get; set; }
         protected SimpleLabel TimeLabel { get; set; }
 
-        protected bool NeedUpdate { get; set; }
-
         public LeaderBoardSettings Settings { get; set; }
         
         public GraphicsCache Cache { get; set; }
@@ -34,7 +32,7 @@ namespace LiveSplit.LeaderBoard.UI.Components
         public float PaddingBottom => 0f;
         public float PaddingRight => 0f;
 
-        public float VerticalHeight => 0;//25 + Settings.SplitHeight;
+        public float VerticalHeight => 25;//25 + Settings.SplitHeight;
         public float HorizontalWidth => 0;//Settings.SplitWidth + CalculateLabelsWidth();
 
         public float MinimumWidth { get; set; }
@@ -42,7 +40,7 @@ namespace LiveSplit.LeaderBoard.UI.Components
 
         public IDictionary<string, Action> ContextMenuControls => null;
 
-        public string ComponentName => "Record";
+        public string ComponentName => "LBRecord";
 
         public RecordComponent(LeaderBoardSettings settings)
         {
@@ -52,7 +50,6 @@ namespace LiveSplit.LeaderBoard.UI.Components
 
             Settings = settings;
             MinimumHeight = 10;
-            NeedUpdate = true;
             Cache = new GraphicsCache();
         }
 
@@ -67,7 +64,7 @@ namespace LiveSplit.LeaderBoard.UI.Components
 
         public void DrawVertical(Graphics g, LiveSplitState state, float width, System.Drawing.Region clipRegion)
         {
-            throw new NotImplementedException();
+            g.FillRectangle(new SolidBrush(Color.Transparent), 0, 0, width, VerticalHeight);
         }
 
         public Control GetSettingsControl(LayoutMode mode)
